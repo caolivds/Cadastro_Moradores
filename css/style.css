@@ -1,0 +1,123 @@
+
+body {
+    font-family: Arial, sans-serif;  
+    background-color: #f2f2f2;       
+    margin: 0;                      
+}
+/* ---------- MENU DE CIMA ---------- */
+/* ".menu" = elementos com class="menu" */
+.menu {
+    background-color: #2c3e50;       
+    padding: 15px;                   
+}
+
+/* Links dentro do menu */
+.menu a {
+    color: white;
+    text-decoration: none;           
+    margin-right: 20px;              
+    font-weight: bold;
+}
+
+/* Quando passa o mouse em cima do link */
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- CAIXA CENTRAL ---------- */
+.container {
+    background-color: white;
+    max-width: 900px;                
+    margin: 30px auto;             
+    padding: 25px;
+    border-radius: 8px;             
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* ---------- FORMULÁRIO ---------- */
+label {
+    display: block;                 
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;                     
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;          
+}
+
+/* Campo desativado (placa quando marca "Não tenho veículo") */
+input:disabled {
+    background-color: #eee;          
+    cursor: not-allowed;  
+}           
+
+/* ---------- CHECKBOX "NÃO TENHO VEÍCULO" ---------- */
+/* ".opcao" = o label do checkbox (class="opcao" no HTML) */
+.opcao {
+    font-weight: normal;             
+    margin-top: 10px;
+}
+
+/* O checkbox dentro do label */
+.opcao input {
+    width: auto;                     
+    margin-right: 8px;              
+}
+
+/* ---------- BOTÃO ---------- */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #27ae60;      
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;  
+}              
+
+button:hover {
+    background-color: #1e8449;      
+}
+
+/* ---------- TABELA DA LISTA ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;       
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;   
+    text-align: left;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* ---------- LINKS EDITAR E EXCLUIR ---------- */
+/* Links dentro da tabela */
+td a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #2980b9;                
+    font-weight: bold;
+}
+
+/* O 2º link de cada linha (Excluir) fica vermelho */
+td a:last-child {
+    color: #c0392b;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Morador</title>
+
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+   
+    <nav class="menu">
+        <a href="cadastro_morador.html">Cadastrar</a>
+        <a href="lista.php">Ver moradores</a>
+    </nav>
+
+    <div class="container">
+        <h1>Cadastro de Morador</h1>
+
+        
+        <form action="../php/cadastrar.php" method="POST">
+
+            <label>Nome</label>
+            <input type="text" name="nome" required>
+
+            <label>Endereço (bloco/apto)</label>
+            <input type="text" name="endereco" required>
+
+            <label>E-mail</label>
+            <input type="email" name="email" required>
+
+            <label>Telefone</label>
+
+            <input type="text" name="telefone" id="telefone" required>
+
+            
+            <label>Placa do veículo</label>
+            
+            <input type="text" name="placa" id="placa" maxlength="7" placeholder="Ex: ABC1D23">
+
+           
+            <label class="opcao">
+                <input type="checkbox" id="semVeiculo">
+                Não tenho veículo
+            </label>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    
+    <script src="../js/morador_novo.js"></script>
+</body>
+</html>
